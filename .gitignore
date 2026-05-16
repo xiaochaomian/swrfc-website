@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor swap/lock files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts / packages
+*.zip
+*.tar.gz
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local env
+.env
+.env.local
+.env.*.local

@@ -1,0 +1,17 @@
+# Cloudflare Pages redirects
+# Pretty URLs: /about works without the .html extension.
+# Cloudflare Pages auto-resolves /about -> /about.html, so this file mostly
+# handles legacy redirects from the old GoDaddy Website Builder site.
+
+# Old GoDaddy paths → new pages
+/minis        /programs       301
+/juniors      /programs       301
+/questions    /contact        301
+/questions%3F /contact        301
+/register     /tryouts        301
+
+# www -> apex (optional; flip if you prefer www)
+# https://www.swrfc.com/*  https://swrfc.com/:splat  301
+
+# 404 fallback
+/*  /404.html  404
