@@ -1,0 +1,23 @@
+{
+  // Cloudflare Workers Static Assets deployment config.
+  // Docs: https://developers.cloudflare.com/workers/static-assets/
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "swrfc-website",
+  "compatibility_date": "2026-05-16",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    // Serve every file in the repo root as a static asset.
+    // The .assetsignore file controls what gets excluded.
+    "directory": ".",
+
+    // Clean URLs: /about resolves to /about.html, trailing slash auto-handled.
+    "html_handling": "auto-trailing-slash",
+
+    // When a route doesn't match any file, serve 404.html with a 404 status
+    // (replaces the old `/* /404.html 404` line from _redirects that the
+    // legacy Pages router accepted but Workers Static Assets does not).
+    "not_found_handling": "404-page"
+  }
+}

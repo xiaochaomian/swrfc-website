@@ -13,5 +13,7 @@
 # www -> apex (optional; flip if you prefer www)
 # https://www.swrfc.com/*  https://swrfc.com/:splat  301
 
-# 404 fallback
-/*  /404.html  404
+# Note: 404 handling for Workers Static Assets is configured in
+# wrangler.jsonc via `assets.not_found_handling`, not here. The old
+# `/* /404.html 404` line that worked on legacy Pages is not valid
+# here — only 200/301/302/303/307/308 are accepted.

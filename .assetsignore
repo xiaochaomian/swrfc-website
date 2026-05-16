@@ -1,0 +1,33 @@
+# Files to exclude from the Workers Static Assets bundle.
+# These will NOT be uploaded to Cloudflare or served as public assets.
+# Syntax is the same as .gitignore.
+
+# Git internals
+.git
+.git/**
+.gitignore
+.gitattributes
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build/deploy artifacts that shouldn't be served
+*.zip
+node_modules
+.wrangler
+
+# Internal docs (keep in repo, don't serve them publicly)
+README.md
+CLOUDFLARE_DEPLOY.md
+GITHUB_DEPLOY.md
+
+# Apache-specific config — useless on Cloudflare, no reason to expose
+.htaccess
