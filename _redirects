@@ -8,7 +8,7 @@
 /juniors      /programs       301
 /questions    /contact        301
 /questions%3F /contact        301
-/register     /tryouts        301
+# /register now auto-resolves to register.html (2026–27 team registration)
 
 # www -> apex (optional; flip if you prefer www)
 # https://www.swrfc.com/*  https://swrfc.com/:splat  301
