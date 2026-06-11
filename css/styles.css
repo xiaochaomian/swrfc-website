@@ -489,7 +489,7 @@ p  { margin: 0 0 1em; color: var(--gray-800); }
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .register-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-.register-card--girls { border-top-color: var(--navy); }
+.register-card--girls, .register-card--navy { border-top-color: var(--navy); }
 .register-card-top { margin-bottom: 18px; }
 .register-card h3 { color: var(--navy-deep); margin-bottom: 8px; font-size: 1.5rem; }
 .register-card p { color: var(--gray-600); margin: 0; }
@@ -505,7 +505,7 @@ p  { margin: 0 0 1em; color: var(--gray-800); }
   border-radius: 0;
   margin-bottom: 12px;
 }
-.register-card--girls .register-badge { background: var(--navy); color: var(--white); }
+.register-card--girls .register-badge, .register-card--navy .register-badge { background: var(--navy); color: var(--white); }
 .register-meta { list-style: none; padding: 0; margin: 0 0 24px; }
 .register-meta li {
   display: flex;
